@@ -1,6 +1,7 @@
 .contentIframeClass {
     width: 90vw; /* 90% of the viewport width */
-    height: 80vh; /* 80% of the viewport height */
+    height: auto; /* Let the height scale automatically based on the width */
+    max-height: 80vh; /* Limit the height to 80% of the viewport height */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -8,13 +9,16 @@
     border: none;
     overflow: hidden;
     
-    /* Styling for the card appearance */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around the card */
+    /* Ensure the aspect ratio is maintained */
+    aspect-ratio: 16 / 9; /* Adjust this ratio based on your content's original aspect ratio */
     
     /* Optional: Set max width and height to avoid the iframe from exceeding the screen size */
     max-width: 1920px; /* Maximum width */
     max-height: 1080px; /* Maximum height */
+    
+    /* Styling for the card appearance */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around the card */
 }
 
 

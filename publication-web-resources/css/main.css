@@ -1,16 +1,20 @@
 .contentIframeClass {
-	width: 1920px;
-	height: 1080px;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border: none;
-	overflow: hidden;
-    overflow: hidden; /* This will disable the page scrollbar */
-border-radius: 15px; /* Rounded corners */
+    width: 90vw; /* 90% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    overflow: hidden;
+    
+    /* Styling for the card appearance */
+    border-radius: 15px; /* Rounded corners */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow around the card */
-
+    
+    /* Optional: Set max width and height to avoid the iframe from exceeding the screen size */
+    max-width: 1920px; /* Maximum width */
+    max-height: 1080px; /* Maximum height */
 }
 
 
